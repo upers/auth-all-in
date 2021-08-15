@@ -1,0 +1,43 @@
+gateway:
+  dns: "http:://localhost:8080"
+security:
+  login:
+    uri: /oauth/login
+  refresh:
+    token:
+      uri: '/oauth/refresh-token'
+      expiration: 604800000
+      prefix: 'Refresh '
+  access:
+    token:
+      expiration: 300000
+      prefix: 'Bearer '
+  pk-path: pks/private_key.der
+  pub-path: pks/public_key.der
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 10
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5445/frontnode?createDatabaseIfNotExist=true'
+    username: postgres
+    password: l5hscT2gzk4uUtpUR9vVse
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: never
+    hikari:
+      connectionTimeout: 45000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      maximumPoolSize: 10
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        use_jdbc_metadata_defaults: false
+        jdbc:
+          time_zone: UTC

@@ -1,0 +1,46 @@
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+<center>
+<table id="bodyTable" style="background-color: #eeeeee;" border="0" width="100%" cellspacing="0" cellpadding="20">
+<tbody>
+<tr>
+<td align="center" valign="top"><!-- // BEGIN CONTAINER -->
+<table id="templateContainer" class="rounded6" style="border-radius: 6px; background-color: none;" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center" valign="top"><!-- // BEGIN HEADER -->
+<table border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- END HEADER \\ --></td>
+</tr>
+<tr>
+<td align="center" valign="top"><!-- // BEGIN BODY -->
+<table id="templateBody" class="rounded6" style="border-radius: 6px; background-color: #ffffff;" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="bodyContent" style="line-height: 150%; font-family: Helvetica; font-size: 14px; color: #333333; padding: 20px;" align="left" valign="top">
+<div><b><i>Click to verify your registration: <a href="${dns_link}">Verify!</a></br></i></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- END BODY \\ --></td>
+</tr>
+</tbody>
+</table>
+<!-- END CONTAINER \\ --></td>
+</tr>
+</tbody>
+</table>
+</center>
+
+</body>

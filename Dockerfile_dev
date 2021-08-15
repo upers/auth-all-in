@@ -1,0 +1,11 @@
+#Build Java project within gradle
+FROM maven:3.6.3-jdk-13
+ADD . ./
+RUN mvn clean install
+#Copy compiled java application and run within OpenJDK
+FROM adoptopenjdk/openjdk13:alpine-slim
+RUN mkdir ./app/
+COPY --from=0 /target/auth-1.0.0.jar ./app/
+WORKDIR ./app
+CMD ["java", "-Dspring.profiles.active=dev", "-jar", "auth-1.0.0.jar"]
+EXPOSE 8080

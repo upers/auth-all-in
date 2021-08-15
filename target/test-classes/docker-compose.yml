@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres:10.4
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: example
+      ALLOW_IP_RANGE: 0.0.0.0/0
+    networks:
+      - auth-network
+
+networks:
+  auth-network:
+    name: auth-network

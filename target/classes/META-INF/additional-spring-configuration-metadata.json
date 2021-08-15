@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "security.login.uri",
+      "type": "java.lang.String",
+      "description": "Description for security.login.uri."
+    },
+    {
+      "name": "security.access.token.expiration",
+      "type": "java.lang.String",
+      "description": "Description for security.access.token.expiration."
+    },
+    {
+      "name": "security.access.token.prefix",
+      "type": "java.lang.String",
+      "description": "Description for security.access.token.prefix."
+    },
+    {
+      "name": "security.pk",
+      "type": "java.lang.String",
+      "description": "Description for security.pk."
+    },
+    {
+      "name": "security.pub",
+      "type": "java.lang.String",
+      "description": "Description for security.pub."
+    },
+    {
+      "name": "security.refresh.token.uri",
+      "type": "java.lang.String",
+      "description": "Description for security.refresh.token.uri."
+    },
+    {
+      "name": "security.refresh.token.expiration",
+      "type": "java.lang.String",
+      "description": "Description for security.refresh.token.expiration."
+    },
+    {
+      "name": "security.refresh.token.prefix",
+      "type": "java.lang.String",
+      "description": "Description for security.refresh.token.prefix."
+    }
+  ] }
